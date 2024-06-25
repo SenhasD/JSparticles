@@ -1,2 +1,1 @@
-# .dotfiles
-Contains my personal site.
+# javascript particle simulator

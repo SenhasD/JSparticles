@@ -1,41 +1,90 @@
-<h1>Welcome to my website</h1>
-
-<h2>What do I have to offer</h2>
-
-<h3>1. Financial Benefits</h3>
-
-<h3>2. Society improves</h3>
-
-<h4>a. Improving the tax system</h4>
-
-<h4>b. Providing more refuse dumps</h4>
-
-<h2>Who am I</h2>
-
-<h2>Conclusion</h2>
-
-<button onclick="myFunction()">Try me</button>
-
-<h1 id="demo"></h1>
-
-<script>
-function myFunction() {
-  let text;
-  let favDrink = prompt("What's your favorite drink?", "Coca-Cola");
-  window.alert("Say wuhh!!");
-  switch(favDrink) {
-    case "Coca-Cola":
-      text = "Excellent choice. Coca-Cola is good for your soul.";
-      break;
-    case "Pepsi":
-      text = "Pepsi is my favorite too!";
-      break;
-    case "Sprite":
-      text = "Really? Are you sure the Sprite is your favorite?";
-      break;
-    default:
-      text = "I have never heard of that one..";
-  }
-  document.getElementById("demo").innerHTML = text;
-}
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Average JavaScript User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #main {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>The Average JavaScript User</h1>
+        </div>
+    </header>
+    <div class="container" id="main">
+        <article>
+            <h2>Who is the Average JavaScript User?</h2>
+            <p>
+                JavaScript is one of the most popular programming languages in the world. It's widely used for web development, allowing developers to create dynamic and interactive web applications.
+                But who exactly is the average JavaScript user?
+            </p>
+            <h2>Background and Demographics</h2>
+            <p>
+                The average JavaScript user is typically someone who is interested in web development. They might be a professional developer, a student learning to code, or a hobbyist building personal projects.
+                JavaScript users come from diverse backgrounds and industries, reflecting the language's widespread adoption and versatility.
+            </p>
+            <h2>Skill Levels and Experience</h2>
+            <p>
+                JavaScript users range from beginners to experts. Beginners often start by learning the basics of the language, such as variables, loops, and functions. As they gain more experience, they learn about more advanced topics like asynchronous programming, frameworks, and libraries.
+                Experienced JavaScript developers are familiar with the latest trends and best practices in the industry. They might use modern frameworks like React, Vue, or Angular to build complex web applications.
+            </p>
+            <h2>Common Tools and Technologies</h2>
+            <p>
+                The average JavaScript user makes use of various tools and technologies to enhance their development workflow. Common tools include:
+            </p>
+            <ul>
+                <li>Code editors like Visual Studio Code or Sublime Text</li>
+                <li>Package managers like npm or Yarn</li>
+                <li>Version control systems like Git</li>
+                <li>Build tools like Webpack or Parcel</li>
+            </ul>
+            <p>
+                JavaScript frameworks and libraries are also an essential part of a developer's toolkit. Popular choices include React, Angular, Vue, and jQuery.
+            </p>
+        </article>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JavaScript Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
